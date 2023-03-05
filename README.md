@@ -1,31 +1,46 @@
-# Astro Starter Kit: Portfolio
+# Portfolio Web Page
+This is a portfolio web page built using the Astro framework.
 
+Table of Contents
+- Installation
+- Usage
+- Credits
+- License
+
+## Installation
+
+To install this project, you will need to have the following dependencies installed on your machine:
+
+- Node.js
+- Astro
+
+Once you have those dependencies installed, you can clone this repository by running the following command:
+
+```sh
+git clone https://github.com/your-username/your-repository.git
 ```
-npm create astro@latest -- --template portfolio
+Then, navigate to the project directory and install the project dependencies by running:
+
+```sh
+npm install
 ```
+## Usage
+To start the local development server, run:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+```sh
+npm start
+```
+This will start the development server on http://localhost:3000/.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+To build the production version of the website, run:
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+```sh
+npm run build
+```
+This will create a public directory with the compiled website.
 
+## Credits
+This website was created by Jesser Bedoui. The design is based on the [Astro Portfolio Template](https://github.com/withastro/astro/tree/main/examples/portfolio).
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## License
+This project is licensed under the terms of the MIT license. See the LICENSE file for details.
