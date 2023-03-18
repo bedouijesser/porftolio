@@ -36,27 +36,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Detect package manager
-          
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-          cache: npm
-          cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-      - name: Install dependencies
-        run: npm ci
-        working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         uses: withastro/action@v0
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ${{ env.BUILD_PATH }}/dist
-
+      
   deploy:
     environment:
       name: github-pages
