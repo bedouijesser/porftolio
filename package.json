@@ -10,6 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.17"
+    "@astrojs/react": "^2.1.0",
+    "@astrojs/tailwind": "^3.1.0",
+    "@emailjs/browser": "^3.10.0",
+    "@react-three/drei": "^9.57.2",
+    "@react-three/fiber": "^8.12.0",
+    "astro": "^2.1.2",
+    "astro-rome": "^0.1.11",
+    "framer-motion": "^10.2.4",
+    "maath": "^0.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-tilt": "^0.1.4",
+    "react-vertical-timeline-component": "^3.6.0",
+    "tailwindcss": "^3.2.7",
+    "three": "^0.150.1"
   }
 }
