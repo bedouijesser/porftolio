@@ -4,6 +4,8 @@ import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://bedouijesser.github.io',
+    base: '/porftolio',
     integrations: [
         AstroPWA({
             navigateFallback: '/404',
