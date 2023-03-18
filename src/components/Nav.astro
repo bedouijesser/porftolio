@@ -38,6 +38,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 					<li>
 						<a
 							aria-current={Astro.url.pathname === href}
+							rel="prefetch"
 							class:list={[
 								'link',
 								{
