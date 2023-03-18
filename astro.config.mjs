@@ -6,7 +6,7 @@ import prefetch from "@astrojs/prefetch";
 // https://astro.build/config
 export default defineConfig({
     site: 'https://bedouijesser.github.io',
-    base: '/porftolio',
+    base: '/porftolio/',
     integrations: [AstroPWA({
         navigateFallback: '/404',
         registerType: "autoUpdate",
