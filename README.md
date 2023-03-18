@@ -17,7 +17,7 @@ To install this project, you will need to have the following dependencies instal
 Once you have those dependencies installed, you can clone this repository by running the following command:
 
 ```sh
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/bedouijesser/porftolio.git
 ```
 Then, navigate to the project directory and install the project dependencies by running:
 
