@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import { SEO } from "astro-seo"
+import { seoConfig } from "@util/seoConfig"
 
 interface Props {
 	title?: string | undefined;
@@ -11,7 +13,29 @@ const {
 	description = 'The personal site of Jesser Bedoui',
 } = Astro.props;
 ---
-
+<SEO
+			title={title}
+			description={seoConfig.description || description}
+			openGraph={{
+				basic: {
+					title: title,
+					type: "website",
+					image: seoConfig.image.url
+				},
+				image: {
+					width: seoConfig.image.width,
+					height: seoConfig.image.height,
+					alt: seoConfig.image.alt
+				},
+				optional: {
+					siteName: seoConfig.siteName,
+					description: seoConfig.description || description
+				}
+			}}
+			twitter={{
+				card: seoConfig.twitter.card
+			}}
+		/>
 <meta charset="UTF-8" />
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
@@ -52,4 +76,4 @@ const {
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
 </script>
-<script src="../pwa.ts"></script>
+<script src="/registerSW.js"></script>
