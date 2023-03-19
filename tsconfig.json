@@ -1,4 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": ["node_modules/vite-plugin-pwa/client.d.ts"]
+  "include": [
+    "node_modules/vite-plugin-pwa/*.d.ts",
+    "node_modules/vite-plugin-pwa/info.d.ts"
+  ]
 }
