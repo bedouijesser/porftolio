@@ -52,4 +52,4 @@ const {
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
 </script>
-<script is:inline src="../pwa.ts"></script>
+<script is:inline src={Astro.resolve('../pwa.ts')}></script>
