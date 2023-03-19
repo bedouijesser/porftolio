@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import AstroPWA from '@vite-pwa/astro';
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 
@@ -7,13 +6,10 @@ import prefetch from "@astrojs/prefetch";
 export default defineConfig({
     site: 'https://jesser-bedoui.tech/',
     base: '/',
-    integrations: [AstroPWA({
-        navigateFallback: '/404',
-        registerType: "autoUpdate",
-        devOptions: {
-            enabled: true
-        }
-    }), sitemap(), prefetch()],
+    integrations: [
+        sitemap(),
+        prefetch()
+    ],
     experimental: {
         assets: true
     }

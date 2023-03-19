@@ -1,6 +1,6 @@
 {
-    "name": "Jesser",
-    "short_name": "Jesser",
+    "name": "Jesser Bedoui Portfolio",
+    "short_name": "Jesser Bedoui",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -16,4 +16,5 @@
     "theme_color": "#090b11",
     "background_color": "#090b11",
     "display": "standalone"
+
 }
