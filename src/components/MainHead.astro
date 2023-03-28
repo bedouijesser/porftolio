@@ -14,7 +14,6 @@ const {
 } = Astro.props;
 ---
 <SEO
-			title={title}
 			description={seoConfig.description || description}
 			openGraph={{
 				basic: {
@@ -37,16 +36,13 @@ const {
 			}}
 		/>
 <meta charset="UTF-8" />
-<meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
-<title>{title}</title>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#39529d">
-<link rel="manifest" href="/manifest.webmanifest">
 <meta name="msapplication-config" content="/browserconfig.xml" />
 <meta name="msapplication-TileColor" content="#090b11">
 <meta name="theme-color" content="#090b11">
@@ -77,4 +73,3 @@ const {
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
 </script>
-<script is:inline src="/registerSW.js"></script>

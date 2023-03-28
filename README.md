@@ -1,7 +1,12 @@
 # Portfolio Web Page
 This is a portfolio web page built using the Astro framework.
 
-Table of Contents
+Awesome links used in this project: 
+- backdrop cursor effect: https://www.youtube.com/watch?v=kySGqoU7X-s
+
+
+
+## Table of Contents
 - Installation
 - Usage
 - Credits
@@ -9,7 +14,8 @@ Table of Contents
 
 ## How This Site Rocks
 
-the website is a blazingly fast, scoring perfect 100s in Google Lighthouse. This means it's fast, easy to use, and looks great on any device. Check out the GIF below to see for yourself:
+the website is a blazingly fast ⚡⚡, scoring perfect 100s in Google Lighthouse. This means it's fast, easy to use, and looks great on any device. Check out the GIF below to see for yourself:
+<br>
 <img style="margin: 2rem auto" width="100%" src="./github-docs/lighthouse-score.gif" />
 ## Packages
 
